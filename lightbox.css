@@ -1,0 +1,31 @@
+body
+{
+  padding-top: 50px;
+}
+img
+{
+  margin: 5px 10px 10px 5px  ;
+  width:400px;
+  height:400px;
+}
+div
+{
+  margin:100px;
+}
+h1,form
+{
+  margin-left: 100px
+}
+button.js-close
+{
+  float:right;
+}
+input
+{
+  width:150px;
+  height: 25px;
+}
+.hidden
+{
+  display:none;
+}
