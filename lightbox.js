@@ -49,12 +49,14 @@ function lightbox()
   $('.js-video').click(function(event)
   {
     var id=$(this).data('id');
-    var element='<div><iframe width="100%" height="700" src="https://www.youtube.com/embed/'+id+'"></iframe>'+
+    var element='<div class="js-place"><iframe width="100%" height="500" src="https://www.youtube.com/embed/'+id+'"></iframe>'+
     '<button type="button" class="js-close">close</button></div>';
 
     $('.js-lightbox').removeClass('hidden');
     $('.js-lightbox').html(element);
     $('.js-search-results').addClass('hidden');
+    $('.container').addClass('vanish');
+    $('.js-search-form').addClass('hidden');
     lightboxClose();
   });
 }
@@ -66,6 +68,9 @@ function lightboxClose()
   {
     $(this).closest("div").remove();
     $('.js-search-results').removeClass('hidden');
+    $('.container').removeClass('vanish');
+    $('.js-search-form').removeClass('hidden');
+
   });
 }
 
